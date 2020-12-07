@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/qiniu/log"
+	log "github.com/sirupsen/logrus"
 )
 
 var ErrGoTimeout = errors.New("GoTimeoutFunc")

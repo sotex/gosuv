@@ -31,11 +31,12 @@ import (
 
 	"github.com/axgle/pinyin"
 	"github.com/kennygrant/sanitize"
-	"github.com/lunny/dingtalk_webhook"
+	dingtalk "github.com/lunny/dingtalk_webhook"
 	"github.com/natefinch/lumberjack"
-	"github.com/qiniu/log"
 	"github.com/soopsio/gosuv/pushover"
 	"github.com/soopsio/kexec"
+
+	log "github.com/sirupsen/logrus"
 )
 
 type FSMState string

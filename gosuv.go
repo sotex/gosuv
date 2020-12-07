@@ -12,8 +12,9 @@ import (
 	"strings"
 
 	"github.com/imroc/req"
-	"github.com/qiniu/log"
 	"github.com/urfave/cli"
+
+	log "github.com/sirupsen/logrus"
 )
 
 const appID = "app_8Gji4eEAdDx"
@@ -112,6 +113,13 @@ func checkServerStatus() error {
 
 func main() {
 	var defaultConfigPath = filepath.Join(defaultGosuvDir, "conf/config.yml")
+
+	// 设置日志格式
+	log.SetFormatter(&log.TextFormatter{})
+	// 设置日志输出位置
+	log.SetOutput(os.Stdout)
+	// 设置日志输出级别(要输出Debug信息可改为 DebugLevel 或 TraceLevel)
+	log.SetLevel(log.InfoLevel)
 
 	app := cli.NewApp()
 	app.Name = "gosuv"

@@ -21,10 +21,11 @@ import (
 	"github.com/go-yaml/yaml"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/websocket"
-	"github.com/qiniu/log"
 	_ "github.com/shurcooL/vfsgen"
 	"github.com/soopsio/gosuv/gops"
 	"github.com/soopsio/kexec"
+
+	log "github.com/sirupsen/logrus"
 )
 
 var defaultGosuvDir string

@@ -6,7 +6,7 @@ import (
 	"io"
 	"time"
 
-	log "github.com/qiniu/log"
+	log "github.com/sirupsen/logrus"
 )
 
 type Bool struct {

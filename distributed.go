@@ -18,7 +18,8 @@ import (
 	"github.com/bluele/gcache"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/websocket"
-	"github.com/qiniu/log"
+
+	log "github.com/sirupsen/logrus"
 )
 
 type Cluster struct {
